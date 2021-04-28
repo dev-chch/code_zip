@@ -1,17 +1,17 @@
 //포스트를 작성하는 코드 중.. 포스트 타입을 커스텀 포스트 타입으로 변경하고 싶을 때
-
+<?php
 if(isset($_POST['submit'])){
   $post_id = wp_insert_post( array(
     'post_title' => $your_title,
     'post_content' => $your_content,
     'post_status' => 'publish',
     'comment_status' => 'closed',
-    'ping_status' => 'closed',   
+    'ping_status' => 'closed',
   ));
-  
+
   $post_type = 'custom_type';
   $query = "UPDATE {$wpdb->prefix}posts SET post_type='".$post_type."' WHERE id='".$post_id."' LIMIT 1";
-  GLOBAL $wpdb; 
+  GLOBAL $wpdb;
   $wpdb->query($query);
 }
 
@@ -23,7 +23,7 @@ $post_id = wp_insert_post(array (
   'post_content' => $your_content,
   'post_status' => 'publish',
   'comment_status' => 'closed',
-  'ping_status' => 'closed',   
+  'ping_status' => 'closed',
 ));
 
 //tip. wp_insert_post() 함수는 포스트 작성 후 해당 post id를 반환함.
