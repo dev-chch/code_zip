@@ -1,5 +1,5 @@
-//포스트를 작성하는 코드 중.. 포스트 타입을 커스텀 포스트 타입으로 변경하고 싶을 때
 <?php
+//포스트를 작성하는 코드 중.. 포스트 타입을 커스텀 포스트 타입으로 변경하고 싶을 때
 if(isset($_POST['submit'])){
   $post_id = wp_insert_post( array(
     'post_title' => $your_title,
