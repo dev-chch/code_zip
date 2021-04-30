@@ -17,4 +17,5 @@
   top : 창의 화면 위에서부터의 팝업 위치
   left : 창의 화면 왼쪽에서부터의 팝업 위치
 -->
-<button onclick="window.open('http://www.naver.com', '네이버팝업', 'width=700px,height=800px, scrollbars=yes, menubar=no');"></button>
+<button onclick="window.open('http://www.naver.com', '네이버팝업', 'width=700px,height=800px, scrollbars=yes, menubar=no');"></button> <!-- only html -->
+<button onclick="window.open('<?php echo add_query_arg('parameter_key', 'parameter_value', get_permalink());?>', 'payletter', 'width=800, height=600, resizable=no, scrollbars=no, status=no;')">TEST</button> <!-- with wordpress -->
