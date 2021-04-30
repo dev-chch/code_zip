@@ -24,6 +24,7 @@ $post_id = wp_insert_post(array (
   'post_status' => 'publish',
   'comment_status' => 'closed',
   'ping_status' => 'closed',
+  'post_type' => 'my_custom_type',
 ));
 
 //tip. wp_insert_post() 함수는 포스트 작성 후 해당 post id를 반환함.
