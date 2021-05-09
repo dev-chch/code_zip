@@ -1,3 +1,4 @@
+<?php
 /**
 *
 * 테마 functions.php에 입력하면 됨 
@@ -17,3 +18,4 @@ function wpboard_tinymce_custom_css($mce_css) {
 
 	return $mce_css;
 }
+?>
