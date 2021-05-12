@@ -1,0 +1,7 @@
+/* 사파리에서 이미지가 늘어나는 경우에 오브젝트 핏: 컨테인 을 추가하면 된다. */
+
+img {
+  width: auto;
+  height: inherit;
+  object-fit: contain;
+}
