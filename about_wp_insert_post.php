@@ -18,7 +18,6 @@ if(isset($_POST['submit'])){
 //위 코드처럼 해도 동작은 함. 의미 없이 휘두르는 게 크다.
 
 $post_id = wp_insert_post(array (
-  'post_type' => 'your_post_type',
   'post_title' => $your_title,
   'post_content' => $your_content,
   'post_status' => 'publish',
