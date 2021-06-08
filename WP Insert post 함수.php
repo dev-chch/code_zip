@@ -1,7 +1,7 @@
 <?php
 //포스트를 작성하는 코드 중.. 포스트 타입을 커스텀 포스트 타입으로 변경하고 싶을 때
 if(isset($_POST['submit'])){
-  $post_id = wp_insert_post( array(
+  $post_id = wp_insert_post(array(
     'post_title' => $your_title,
     'post_content' => $your_content,
     'post_status' => 'publish',
@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
 
 //위 코드처럼 해도 동작은 함. 의미 없이 휘두르는 게 크다.
 
-$post_id = wp_insert_post(array (
+$post_id = wp_insert_post(array(
   'post_title' => $your_title,
   'post_content' => $your_content,
   'post_status' => 'publish',
