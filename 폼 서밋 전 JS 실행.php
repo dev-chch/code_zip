@@ -6,8 +6,13 @@
 <script>
 jQuery('#myform').submit(function(event) {
  event.preventDefault(); // 서밋 기본 이벤트 방지.
-
-  // 코드입력
+  
+ if(// 코드 입력){
+  // 코드 입력
+ }
+ else(// 코드 입력){
+  // 코드 입력 
+ }
   
  jQuery(this).unbind('submit').submit(); // 서밋
 })  
