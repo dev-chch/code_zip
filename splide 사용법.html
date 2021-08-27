@@ -1,0 +1,47 @@
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.1.2/dist/js/splide-extension-grid.min.js"></script> <!-- Grid 익스텐션 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+<script> // 노말하게 사용
+new Splide('#slide', {
+	type   : 'slide',
+	perPage: 4,
+	perMove: 1,
+  pagination: false,
+  trimSpace: true,
+  gap: '20px',
+  rewind: false,
+  rows: 2,
+  breakpoints: {
+    992: {
+			perPage: 4,
+		},
+		768: {
+			perPage: 2,
+      gap: '0',
+		},
+  }
+} ).mount();
+
+new Splide('#slide', { // Grid 익스텐션 사용
+	type   : 'slide',
+	perPage: 4,
+	perMove: 1,
+  pagination: false,
+  trimSpace: true,
+  gap: '20px',
+  rewind: false,
+  grid       : { 
+    rows: 2,
+  },
+  breakpoints: {
+    992: {
+			perPage: 4,
+		},
+		768: {
+			perPage: 2,
+      gap: '0',
+		},
+  }
+} ).mount(window.splide.Extensions);
+</script>
