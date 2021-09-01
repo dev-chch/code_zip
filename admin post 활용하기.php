@@ -6,6 +6,6 @@ add_action('admin_post_custom_admin_form_submit','custom_admin_form_submit_funct
 // admin_post_(action value)로 구분해서 동작 처리
 function custom_admin_form_submit_function(){
    print_r($_POST);
-   wp_redirect(get_permalink('page_id')));
+   wp_redirect(get_permalink('page_id'));
    exit;
 }
