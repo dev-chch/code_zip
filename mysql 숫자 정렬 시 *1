@@ -25,8 +25,6 @@ select `name` from table order by `field_name` asc;
 
 order by {필드명} *1 {정렬조건} 로 정렬조건을 변경하면 된다.
 
-정렬하고자 하는 필드 뒤에 *1 이 핵심이며 여러가지로 응용도 가능합니다.
-
 select `name` from table order by `field_name` *1 asc;
 
 +-------------------+
