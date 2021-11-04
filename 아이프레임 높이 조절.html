@@ -1,0 +1,31 @@
+<iframe src="url" id="the_iframe" class="myFrame" onload="calcHeight();" name="" title="" frameborder="0" scrolling="no"></iframe>
+
+<script>
+function resize_frame(id) {
+	var frm = document.getElementById("the_iframe");
+	function resize() {
+	var ms_ie = false;
+	var ua = window.navigator.userAgent;
+	var old_ie = ua.indexOf('MSIE ');
+	var new_ie = ua.indexOf('Trident/');
+	if ((old_ie > -1) || (new_ie > -1)){
+		ms_ie = true;
+	}
+	if ( ms_ie ) { var iframeHeight=frm.contentWindow.document.body.scrollHeight;
+		frm.height=iframeHeight+20;
+	}
+	else{
+			frm.style.height = "auto"; 
+			contentHeight = frm.contentWindow.document.documentElement.scrollHeight;
+			frm.style.height = contentHeight + 23 + "px";
+	}
+	}
+	if(frm.addEventListener){
+		frm.addEventListener('load', resize, false);
+	}
+	else{
+		frm.attachEvent('onload', resize);
+	}
+}
+resize_frame('the_iframe'); 
+</script>
