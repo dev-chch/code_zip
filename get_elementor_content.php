@@ -1,5 +1,5 @@
 <?php
-add_shortcode('get-post-elemetor', 'wbk_get_post');
+add_shortcode('get-post-elementor', 'wbk_get_post');
 function wbk_get_post($attr){
 	$post_id = $attr['id'];
 	$frontend = new \Elementor\Frontend();
