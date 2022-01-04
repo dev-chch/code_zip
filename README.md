@@ -1,4 +1,4 @@
-### PROJECT0210 참고거리 GIT 👋
+### 종종 쓰는 코드 모음집 GIT 👋
 
 <!--
 **project0210/project0210** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
